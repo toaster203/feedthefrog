@@ -1,0 +1,161 @@
+<!Doctype html>
+<html lang="en">
+<html>
+    <head>
+        <title>Feed The Frog!</title>
+        <link rel = "stylesheet" href="css/main.css" id="mode">
+        <link rel = "icon" href='images/logo.png' type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="js/scripts.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-navbar">
+            <ul id="nav-2">
+                <li id="navbar-items">
+                    <a href="#tips">tips</a>
+                </li>
+                <li id="navbar-items">
+                    <a href="#explore">explore</a>
+                </li>
+                <li id="navbar-items">
+                    <a href="#main">main</a>
+                </li>
+                <li id="navbar-items">
+                    <a href="#info">info</a>
+                </li>
+                <li id="navbar-items">
+                    <a href="#intro">intro</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--intro section: welcome-->
+        <section id="intro" style="background-image: url('images/one.png')">
+            <h1 class="welcome">welcome to <span class="intro-name">feed the frog</span>!</h1>
+            <h2 class="intro-description">A spin off of the popular productivity approach, eat the frog, combined with pomodoro!<br>
+                Pick the perfect genre of music for each task you desire to complete. 
+                </h2>
+            <h3 class="intro-italics">disclaimer: no frogs harmed here, as we only participate in frog-ductivity B)</h3>
+            <a href="#info" class="welcome-info" >how does feed the frog work?</a>
+            <a href="#main" class="welcome-main" >start the pomodoro</a>
+        </section>
+
+        <!--notes section: explains research-->
+        <section id="info" style="background-image: url('images/two.png')">
+            <h1 class="notes-h1">why are frogs always happy?</h1>
+            <h2 class="notes-h2">because they eat whatever bugs them!</h2>
+            <div class="row">
+                <div id="etf-notes" class="column">
+                    <h3 class="etf-notes-h">eat the frog</h3>
+                    <p class="etf-notes-p">The frog is whatever you consider to be your hardest task. This could be the one that you’ve been dreading to do for a while or the most “procrastinatable” one. Get it done and over with as your first task.</p>
+                    <a href="https://todoist.com/productivity-methods/eat-the-frog" target="_blank" class="learn-etf">learn more!</a>
+                </div>
+                <div id="pomodoro-notes" class="column">
+                    <h3 class="pomodoro-notes-h">pomodoro</h3>
+                    <p class="pomodoro-notes-p">Pomodoro is a time management method used <br>to divide work sessions into smaller intervals with frequent short breaks to make studying easier! <br>This method can help improve your focus and concentration.</p>
+                    <a href="https://todoist.com/productivity-methods/pomodoro-technique" target="_blank" class="learn-pomodoro">learn more!</a>
+                </div>
+                <div id="music-notes" class="column">
+                    <h3 class="music-notes-h">music</h3>
+                    <p class="music-notes-p">Music has shown to improve studying by increasing concentration and memory. It can also help increase focus by improving mood and providing motivation, as well as improve endurance during lengthy study sessions.</p>
+                    <a href="https://www.fnu.edu/benefits-studying-music/" target="_blank" class="learn-music">learn more!</a>
+                </div>
+            </div>
+            <h1 class="notes-h1">ready to make some <span class="frogress">frogress</span> through your to-do list?</h1>
+        </section>
+
+        <!--main section: the main part of wesbite-->
+        <section id="main" style="background-image: url('images/three.png')">
+            <div id="timer">
+                <p class="ctime">good morning! it's 8:03 am</p>
+            </div>
+            <div class="tasks">
+                <div class="input-area">
+                    <h2 class="toughest-task">your toughest task:none</h2>
+                    <label class="input1">
+                        <input class="input-field" type="text" placeholder="Enter your toughest task">
+                    </label>
+                    <button onclick="changeTask()">Add</button>
+                </div>
+            </div>
+            <div class="pomodoro-timer">
+                <p>Enter the number of minutes to work for.</p>
+                <div class="timer-starter">
+                    <input type="text" class="minutes">
+                    <button onclick = "startTimer()">Start</button>
+                </div>
+                <h3 class="time">0:00</h3>
+            </div>
+            <iframe id="yt-vid"
+                    width="711" 
+                    height="200" 
+                    src="https://www.youtube.com/embed/videoseries?list=PLGPpM4Ya2T_7PTuP_XJcy7SUpoQWyjmG-&enablejsapi=1&loop=1"
+            ></iframe>
+        </section>
+
+        <!--explore section: explore various playlists-->
+        
+        <section id="explore" style="background-image: url('images/four.png')">
+            <div>
+                <h1 class="explore-h1">explore playlists</h1>
+                <h2 class="explore-h2">discover your new favourite playlist or genre!</h2>
+            </div>
+            <div id="lofi">
+                <h1 class="genre-header">lo-fi</h1>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/TURbeWK2wwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/_tV5LEBDs7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/videoseries?list=PLl578ZPbYIlGA8PWOpibiewtmNsmL13kN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/videoseries?list=PLl578ZPbYIlFcSxuka8Km37VgbUYUWI5p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div id="anime">
+                <h1 class="anime-h1">anime/main character vibes</h1>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/videoseries?list=PLGPpM4Ya2T_7PTuP_XJcy7SUpoQWyjmG-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/sRiruE1FaIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/Ehy0ZQ6sN0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/_rjQucJUWxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/o0X0QUwU-no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="video-game">
+                <h1 class="genre-header">video games</h1>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/qPQBS6JpNZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/Hkz4SB6wJBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/BLnDVDYJx0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/7JMvn0wfABQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/videoseries?list=PLKDOdCjxOjzIFucHobwJpSK4-vAVXST90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/videoseries?list=PLiE8JPlGBd3Wt01h2WDN1VeCO5dxEubWD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="classical">
+                <h1 class="genre-header">classical</h1>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/jgpJVI3tDbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/YjohMzHkBqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--
+            <div id="nature">
+                <h1 class="genre-header">ambience/nature sounds</h1>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/twM7ulKpPjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/AqgtsfqnoTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/QJN-TbM2HZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>-->
+            <!--<div id="upbeat">
+                <h1 class="genre-header">upbeat</h1>
+                <iframe id="explore-vid" width="200" height="100" src="https://www.youtube.com/embed/R93Uy0dQazE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>-->
+            <div id="community">
+                <h1 class="genre-header">community (coming soon!)</h1>
+                <p>we want to include a feature where YOU can submit playlists you recommend OR showcase your talents to help the community stay frog-ductive :) </p>
+            </div>
+        </section>
+        
+
+        <!--tips section: studying tips-->
+        <section id="tips" style="background-image: url('images/five.png')">
+            
+        </section>
+
+    </body>
+</html>
+

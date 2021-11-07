@@ -1,0 +1,271 @@
+/* navbar formats */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+:root{
+    --background-colour: white;
+    --text-colour: black; 
+
+    --task-button-colour:#69ff7f;
+    --radius:6px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Poppins';
+    background: url("one.png");
+}
+
+#main-navbar li{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+#main-navbar {
+    opacity: 50%;
+}
+
+#navbar-items{
+    float: right;
+    display: inline;
+}
+
+#nav-2{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar-items a{
+    display:block;
+    color: var(--text-colour);
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar-items a:hover{
+    text-decoration: underline;
+}
+
+
+.welcome{
+    padding-top: 0em;
+    padding-left: 1.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: left;
+    color: var(--text-colour);
+    display: block;
+    font-size: 7em;
+}
+
+.intro-name{
+    color: #b0d7d4;
+}
+
+.intro-italics{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 11em;
+    padding-right: 8.2em;
+    text-align: left;
+}
+.intro-description{
+    font-size: 1.6em;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 7em;
+    padding-right: 5.1em;
+    text-align: left;
+    color: var(--text-colour);
+    font-variant: normal;
+    display: block;
+    font-weight: 400;
+    
+}
+
+.notes-h1{
+    padding-top: 1em;
+    padding-left: 1.5em;
+    font-size: 4.3em;
+}
+
+.notes-h2{
+    font-weight: 400;
+    padding-left: 5.1em;
+}
+
+#current-time{
+    padding: 0;
+    margin: 0;
+}
+
+.ctime{
+    font-size: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    text-align: left;
+    color: var(--text-colour);
+    font-variant: normal;
+    display: block;
+    font-weight: 400;
+}
+
+#timer{
+    padding-left: 1.8em;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+    color: var(--text-colour);
+    font-size: 1.8em;
+    line-height: 0%;
+}
+
+.toughest-task{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.other-tasks{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#tasklist{
+    list-style: none;
+    padding: 0.7em;
+    padding-left: 1.5em;
+    border: 0.1em;
+    border-style: solid;
+    border-radius: 0.2em;
+    font-size: 1em;
+    line-height: 2.3em;
+}
+
+h2{
+    margin:0;
+    padding-bottom:10px;
+}
+
+.tasks{
+    background: var(--background-colour);
+    border-radius: var(--radius);
+    padding:10px;
+    width: 400px;
+    border:3px solid black;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    margin-left:50px;
+    margin-top:100px;
+}
+
+.input1:focus::placeholder{
+    color:transparent
+}
+
+#etf-notes{
+    display: inline;
+}
+
+#pomodoro-notes{
+    display: inline;
+}
+#music-notes{
+    display: inline;
+}
+
+.row{
+    margin-left: 70px;
+}
+
+.column{
+    float: left;
+    width:  28%;
+    margin: 30px;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.frogress{
+    font-style: italic;
+}
+
+.notes-h1{
+    font-size: 4em;
+    margin:20px;
+}
+.notes-h2{
+    margin:20px;
+}
+
+
+#yt-vid{
+    display:block;
+    border-style: none;
+    margin-top:400px;
+    margin-left: 560px;
+}
+
+
+.time{
+    display:block;
+    margin-top:-80px;
+    margin-bottom:-420px;
+    font-size: 256px;
+    margin-left: 535px;
+}
+
+.pomodoro-timer{
+    padding-left:60px;
+}
+
+.taskimage {
+    width: 200;
+    height: 200;
+    float: right;
+    margin-top: 1em;
+    display: block;
+}
+
+.welcome-info{
+    font-size: 2em;
+    margin-left: 5.5em;
+    border-style: solid;
+    background-color: #b0d7d4;
+    border-radius: 0.2em;
+    text-decoration: none;
+    color: black;
+    padding: 0.4em 0.6em 0.4em 0.6em;
+    border-width: 0.07em;
+}
+.welcome-main{
+    margin-left: 5.5em;
+    font-size: 2em;
+    border-style: solid;
+    background-color: #b0d7d4;
+    border-radius: 0.2em;
+    text-decoration: none;
+    color: black;
+    padding: 0.4em 0.6em 0.4em 0.6em;
+    border-width: 0.07em;
+}
